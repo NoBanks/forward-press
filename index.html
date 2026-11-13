@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta property="og:title" content="FORWARD press kit">
+<meta property="og:description" content="A memoir of six months, one room, a bike, a dog and a terminal. Kickstarter launches Nov 17 2026.">
+<meta property="og:image" content="https://nobanks.github.io/forward-press/stills/08_dawn_road.jpg">
+<title>FORWARD Press Kit</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&display=swap">
+<style>
+  :root {
+    --bg: #f6f1e8; --fg: #1d1a15; --muted: #6b6355; --line: #d9d0c1; --card: #fffdf9;
+    --accent: #b8742a; --accent-ink: #ffffff; --soft: #efe6d6; --link: #8a5520;
+  }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+    --bg: #14120f; --fg: #efe9dd; --muted: #a79e8e; --line: #33302a; --card: #1c1915;
+    --accent: #d9953f; --accent-ink: #14120f; --soft: #221f1a; --link: #e2a85a; color-scheme: dark;
+  } }
+  :root[data-theme="dark"] {
+    --bg: #14120f; --fg: #efe9dd; --muted: #a79e8e; --line: #33302a; --card: #1c1915;
+    --accent: #d9953f; --accent-ink: #14120f; --soft: #221f1a; --link: #e2a85a; color-scheme: dark;
+  }
+  * { box-sizing: border-box; }
+  body { background: var(--bg); color: var(--fg); font: 16px/1.6 Inter, -apple-system, "Segoe UI", Roboto, sans-serif; margin: 0;
+         padding-block: 32px 64px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+  .wrap { max-width: 860px; margin: 0 auto; }
+  h1, h2, h3 { font-family: Fraunces, Georgia, "Times New Roman", serif; font-weight: 600; text-wrap: balance; margin: 0; }
+  h1 { font-size: clamp(44px, 9vw, 84px); line-height: .95; letter-spacing: -.02em; }
+  h2 { font-size: 26px; margin: 48px 0 14px; padding-top: 18px; border-top: 1px solid var(--line); }
+  h3 { font-size: 18px; margin: 18px 0 6px; }
+  .kicker { font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: var(--accent); font-weight: 600; margin: 0 0 10px; }
+  .sub { font-family: Fraunces, Georgia, serif; font-size: 22px; color: var(--muted); margin: 10px 0 0; max-width: 34em; }
+  p { margin: 0 0 14px; max-width: 66ch; }
+  .lede { font-size: 18px; }
+  a { color: var(--link); }
+  .links { display: flex; flex-wrap: wrap; gap: 10px; margin: 22px 0 0; }
+  .btn { display: inline-block; padding: 10px 16px; border-radius: 999px; background: var(--accent); color: var(--accent-ink); text-decoration: none; font-weight: 600; font-size: 15px; }
+  .btn.ghost { background: transparent; color: var(--fg); border: 1px solid var(--line); }
+  .hero { margin: 28px 0 0; border-radius: 14px; overflow: hidden; border: 1px solid var(--line); }
+  .hero img { display: block; width: 100%; max-width: 100%; height: auto; }
+  .cap { font-size: 13px; color: var(--muted); margin: 8px 0 0; }
+  .facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; margin: 16px 0; }
+  .fact { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; min-width: 0; }
+  .fact b { display: block; font-family: Fraunces, Georgia, serif; font-size: 26px; line-height: 1.1; margin-bottom: 4px; }
+  .fact span { color: var(--muted); font-size: 14px; }
+  ul, ol { padding-left: 22px; margin: 0 0 14px; max-width: 66ch; }
+  li { margin: 6px 0; }
+  .timeline { list-style: none; padding: 0; margin: 0; max-width: none; }
+  .timeline li { display: grid; grid-template-columns: 120px 1fr; gap: 14px; padding: 10px 0; border-bottom: 1px dashed var(--line); }
+  .timeline b { font-family: Fraunces, Georgia, serif; font-weight: 600; }
+  .timeline li > span { min-width: 0; }
+  @media (max-width: 480px) { .timeline li { grid-template-columns: 1fr; gap: 2px; } }
+  .angles { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; }
+  .angle { background: var(--soft); border-radius: 12px; padding: 14px 16px; min-width: 0; }
+  .angle h3 { margin-top: 0; }
+  .angle p { font-size: 15px; margin: 0; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; }
+  .still { background: var(--card); border: 1px solid var(--line); border-radius: 12px; overflow: hidden; min-width: 0; }
+  .still img { display: block; width: 100%; max-width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; }
+  .still div { padding: 10px 12px; font-size: 14px; color: var(--muted); }
+  .still a { font-weight: 600; }
+  blockquote { margin: 18px 0; padding: 4px 0 4px 18px; border-left: 3px solid var(--accent); font-family: Fraunces, Georgia, serif; font-size: 19px; line-height: 1.5; max-width: 60ch; }
+  blockquote small { display: block; font-family: Inter, sans-serif; font-size: 13px; color: var(--muted); margin-top: 6px; }
+  .contact { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 18px 20px; margin-top: 12px; }
+  .contact p { margin: 4px 0; }
+  code { font-family: ui-monospace, Consolas, monospace; font-size: 14px; background: var(--soft); padding: 2px 6px; border-radius: 6px; }
+  .note { font-size: 14px; color: var(--muted); }
+  table { width: 100%; border-collapse: collapse; font-size: 15px; }
+  td, th { text-align: left; padding: 8px 6px; border-top: 1px solid var(--line); vertical-align: top; }
+  th { font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+  .tablewrap { overflow-x: auto; }
+</style>
+</head>
+<body>
+
+
+<div class="wrap">
+  <p class="kicker">Press kit · Kickstarter launches Tuesday, November 17, 2026, 10:00 AM Pacific</p>
+  <h1>FORWARD</h1>
+  <p class="sub">A memoir of six months, one room, a bike, a dog and a terminal. By Ryan Hammer, the cinematographer who lived it, built it and rode through it.</p>
+  <div class="links">
+    <a class="btn" href="https://www.youtube.com/watch?v=sx0LNOGwXZM">Watch the trailer (3 min)</a>
+    <a class="btn ghost" href="https://www.kickstarter.com/projects/ryanhammer/forward">Kickstarter pre-launch page</a>
+    <a class="btn ghost" href="#stills">Stills</a>
+    <a class="btn ghost" href="#contact">Contact</a>
+  </div>
+  <figure class="hero" style="margin-left:0;margin-right:0">
+    <img src="stills/08_dawn_road.jpg" alt="A cyclist rides toward a low sun on a two-lane High Desert road lined with Joshua trees" width="1600" height="900">
+  </figure>
+  <p class="cap">Frame from the FORWARD trailer. Every frame of the trailer was generated in Runway from Ryan's own reference photos; the stills on this page are from that trailer, not photographs. Photographs of Ryan, the bike and the room are available on request.</p>
+
+  <h2>The story in 150 words</h2>
+  <p class="lede">Ryan Hammer is a 41-year-old cinematographer in Apple Valley, California, in the High Desert of San Bernardino County. In May 2026 his marriage ended and he lost his home. By June there was a court case. By fall he was living in a highway motel with his dog, an ebike and a duffel bag, then in a rented den on the back side of a ranch house. He pays for it stocking shelves on closing shifts at a Target ten miles away, riding an ebike twenty miles a day to do it.</p>
+  <p class="lede">In that same window, working from the motel room and the den at two in the morning, he taught himself to build software. In September 2026 one of those builds won $50,000 in XPRIZE's Build with Gemini hackathon, the largest AI hackathon ever held. On October 30 a driver ran him off the road; he got up, straightened the bars, rode the last six miles and worked the shift. On November 3 his dog of fourteen years died. He wrote all of it down as it happened. FORWARD is that book.</p>
+
+  <h2>Fact sheet</h2>
+  <div class="facts">
+    <div class="fact"><b>Since 2008</b><span>working cinematographer and editor; clients have included National Geographic, Samsung, Red Bull and the NBA</span></div>
+    <div class="fact"><b>$50,000</b><span>XPRIZE Build with Gemini, Entrepreneurship and Job Creation category, September 2026, judged on real users and revenue</span></div>
+    <div class="fact"><b>20 miles a day</b><span>ebike commute to and from a closing shift at Target, in the dark, on two-lane desert roads</span></div>
+    <div class="fact"><b>July 2024</b><span>wrote his first line of code; 25+ applications and 58 open-source tools shipped since, built alone with an AI model as collaborator</span></div>
+    <div class="fact"><b>600+ songs</b><span>released as NoBanks Nearby; the trailer music and the book's soundtrack are his own</span></div>
+    <div class="fact"><b>Ten years sober</b><span>as of fall 2026</span></div>
+  </div>
+
+  <h3>Timeline, May to November 2026</h3>
+  <ul class="timeline">
+    <li><b>May</b><span>His marriage ends. He loses his home; most of what he owns stays inside a house he cannot enter.</span></li>
+    <li><b>June</b><span>A court case begins. He handles most of it himself, filing by filing, with a limited-scope attorney for one stretch.</span></li>
+    <li><b>July</b><span>A trading agent he built, which writes a signed receipt for every decision it makes, wins the Turing Test Hackathon on Mantle (1,000 USDT).</span></li>
+    <li><b>September</b><span>The NoBanks AI Listing Engine, which photographs, writes, prices and sells real goods for real people, wins $50,000 in XPRIZE's Build with Gemini hackathon. He starts closing shifts at Target the same month.</span></li>
+    <li><b>Early October</b><span>Two weeks in a highway motel with his dog Charlie, the ebike and a duffel.</span></li>
+    <li><b>October 17</b><span>Moves into a rented den on the back side of a ranch house in Apple Valley. The first door that is his in six months.</span></li>
+    <li><b>October 30</b><span>Riding to a shift, a driver on Yucca Loma Road passes without the three feet California law requires. He goes down with sixty pounds of bike on his leg, gets up, bends the handlebars straight, rides the other six miles and works the shift.</span></li>
+    <li><b>November 3</b><span>Charlie, a corgi mix he had for fourteen years, dies at home. Ryan works the closing shift that afternoon. The next morning he takes Charlie to the shelter on his lap in a $13 ride and walks four miles home. That night a framed 5x5 print he sells online, relisted by a pipeline he wrote, sells to a buyer in the Hamptons. His art paid for his dog's last ride.</span></li>
+    <li><b>November 17</b><span>FORWARD launches on Kickstarter.</span></li>
+  </ul>
+
+  <h2>Five ways into the story</h2>
+  <div class="angles">
+    <div class="angle"><h3>Local</h3><p>An Apple Valley neighbor who stocks shelves at the Target on Bear Valley Road, rides Yucca Loma Road in the dark, and won the biggest AI hackathon in the world from a motel on the highway.</p></div>
+    <div class="angle"><h3>AI and the working poor</h3><p>Everything was built on a laptop in a motel room and a den, between closing shifts, by a man with no degree, no savings and no car. What AI tools actually do for one person with nothing.</p></div>
+    <div class="angle"><h3>AI filmmaking</h3><p>A Runway Creative Partner, a cinematographer since 2008, made the trailer solo from his own reference photos, with a voice cloned from his own recording and music from his own catalog.</p></div>
+    <div class="angle"><h3>The ebike</h3><p>Twenty miles a day, every day, as the only transportation he has. A close pass, a crash, and six more miles to the shift. The bike is the spine of the book.</p></div>
+    <div class="angle"><h3>Publishing in real time</h3><p>A memoir written from the daily logs as they were kept: the budget spreadsheet, the receipts, the commit history, the filings. Crowdfunded with no publisher and no agent, with a documentary stretch goal.</p></div>
+  </div>
+
+  <h2>From the manuscript draft</h2>
+  <blockquote>I made it home. That's the whole story of this year, in one ride.<small>FORWARD, draft, on riding home through rain after a closing shift</small></blockquote>
+  <blockquote>I got up. I bent the handlebars straight. I tightened the battery bracket in the dirt. I rode the other six miles, worked the shift, and rode the ten home in the dark.<small>FORWARD, draft, October 30</small></blockquote>
+  <blockquote>Somewhere in the last six months I stopped being a man things happened to and became a man who gets up off Yucca Loma Road, straightens the bars, and rides. Forward. That's the whole word. That's the book.<small>FORWARD, draft, closing lines</small></blockquote>
+
+  <h2>The campaign</h2>
+  <div class="tablewrap"><table>
+    <tr><th>Platform</th><td>Kickstarter, Publishing: Nonfiction. Creator: Ryan Hammer, Apple Valley, CA.</td></tr>
+    <tr><th>Launch</th><td>Tuesday, November 17, 2026, 10:00 AM Pacific</td></tr>
+    <tr><th>Length</th><td>30 days, ending December 17, 2026. All or nothing.</td></tr>
+    <tr><th>Goal</th><td>$6,500, which pays for a professional edit, the cover and layout, the audiobook master and signed paperbacks for backers. The full breakdown, including the author's own pay, is printed on the campaign page.</td></tr>
+    <tr><th>Rewards</th><td>Digital first: ebook, an audiobook in Ryan's voice, the FORWARD soundtrack from his catalog, the trailer in 4K, early chapters. Signed paperbacks, a signed 5x5 framed frame from the trailer, and executive-producer credits at the top tiers. Book delivers June 2027.</td></tr>
+    <tr><th>Stretch goals</th><td>A documentary short from the footage and the logs, with a printed budget, if the campaign over-funds; a feature-length documentary at the top stretch.</td></tr>
+    <tr><th>AI disclosure</th><td>Stated on the campaign page: the trailer was generated in Runway from Ryan's own reference photos; the voice is a clone built from his own recording; every input was his. The book itself is written by Ryan.</td></tr>
+  </table></div>
+
+  <h2 id="stills">Stills from the trailer</h2>
+  <p class="note">Click any image to open it full size (1600 px). Credit: "FORWARD trailer, Ryan Hammer / Runway". The trailer master (1080p, 24 fps, 3:11) is available on request.</p>
+  <div class="grid">
+    <div class="still"><a href="stills/01_rain_ride.jpg"><img src="stills/01_rain_ride.jpg" alt="Riding an ebike through rain at night on a desert road" width="1600" height="900"></a><div>The rain ride home after a closing shift. <a href="stills/01_rain_ride.jpg">Full size</a></div></div>
+    <div class="still"><a href="stills/02_motel_bed.jpg"><img src="stills/02_motel_bed.jpg" alt="A motel room with an ebike by the door and a dog asleep on the bed beside a duffel bag" width="1600" height="900"></a><div>The motel: a bike, a dog, a duffel. <a href="stills/02_motel_bed.jpg">Full size</a></div></div>
+    <div class="still"><a href="stills/06_charlie.jpg"><img src="stills/06_charlie.jpg" alt="A rented den with a window on the desert, an ebike against the wall, a dog on a mat and a laptop on a desk" width="1600" height="900"></a><div>The den in Apple Valley, Charlie behind the desk. <a href="stills/06_charlie.jpg">Full size</a></div></div>
+    <div class="still"><a href="stills/04_the_win.jpg"><img src="stills/04_the_win.jpg" alt="A bearded man lit by a phone screen in the dark, smiling" width="1600" height="900"></a><div>The night the $50,000 result came in. <a href="stills/04_the_win.jpg">Full size</a></div></div>
+    <div class="still"><a href="stills/05_rides_on.jpg"><img src="stills/05_rides_on.jpg" alt="At dusk a cyclist rides away down a dirt shoulder toward distant parking-lot lights" width="1600" height="900"></a><div>October 30: the last six miles to the shift. <a href="stills/05_rides_on.jpg">Full size</a></div></div>
+    <div class="still"><a href="stills/07_walk_home.jpg"><img src="stills/07_walk_home.jpg" alt="A man walks alone on the shoulder of a desert highway toward mountains" width="1600" height="900"></a><div>November 4: the four-mile walk home from the shelter. <a href="stills/07_walk_home.jpg">Full size</a></div></div>
+    <div class="still"><a href="stills/08_dawn_road.jpg"><img src="stills/08_dawn_road.jpg" alt="A cyclist rides toward the sunrise on a desert road" width="1600" height="900"></a><div>Forward. <a href="stills/08_dawn_road.jpg">Full size</a></div></div>
+    <div class="still"><a href="stills/09_title.jpg"><img src="stills/09_title.jpg" alt="The FORWARD title card" width="1600" height="900"></a><div>Title card. <a href="stills/09_title.jpg">Full size</a></div></div>
+  </div>
+
+  <h2>About Ryan Hammer</h2>
+  <p>Ryan Hammer, 41, has worked as a cinematographer and post-production editor since 2008, with clients including National Geographic, Samsung, Red Bull and the NBA. He is an official Creative Partner with Runway and Hailuo, and was featured on the Dropbox company blog in February 2025. As NoBanks Nearby he has released more than six hundred songs. He wrote his first line of code in July 2024 and has since shipped more than twenty-five applications and fifty-eight open-source tools, including the XPRIZE Build with Gemini winner NoBanks AI Listing Engine and the Mantle Turing Test Hackathon winner. He lives in Apple Valley, California, and works closing shifts at Target.</p>
+  <p>Links: <a href="https://nobanksnearby.com/hire">nobanksnearby.com/hire</a> (film work) · <a href="https://livingagentic.me">livingagentic.me</a> (builds) · <a href="https://github.com/NoBanks">github.com/NoBanks</a> · <a href="https://linkedin.com/in/nobanksnearby">linkedin.com/in/nobanksnearby</a></p>
+
+  <h2>Interview notes</h2>
+  <ul>
+    <li>Available by phone or video most mornings before 1:00 PM Pacific and after 10:30 PM; in person in the Victor Valley by arrangement (no car; he rides).</li>
+    <li>Happy to show the commute, the den, the bike and the build logs. Happy to walk through exactly how the trailer was made, shot by shot.</li>
+    <li>The court case is open. Names of other people, the lawyers and case details are not available and will not be discussed. Everything else is on the record.</li>
+    <li>Real photographs for print: on request, same day.</li>
+  </ul>
+
+  <h2 id="contact">Contact</h2>
+  <div class="contact">
+    <p><b>Ryan Hammer</b></p>
+    <p>Apple Valley, California</p>
+    <p>Email: <code>oceanviewryan@gmail.com</code></p>
+    <p>Phone: <code>(443) 415-5796</code></p>
+    <p>Trailer: <a href="https://www.youtube.com/watch?v=sx0LNOGwXZM">youtube.com/watch?v=sx0LNOGwXZM</a></p>
+    <p>Kickstarter: <a href="https://www.kickstarter.com/projects/ryanhammer/forward">kickstarter.com/projects/ryanhammer/forward</a></p>
+  </div>
+  <p class="note" style="margin-top:28px">Every date and figure on this page comes from the daily logs kept since May 2026 and from public results pages. Updated November 12, 2026.</p>
+</div>
+
+</body>
+</html>
